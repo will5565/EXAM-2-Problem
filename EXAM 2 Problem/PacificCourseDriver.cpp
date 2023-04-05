@@ -6,7 +6,7 @@ using namespace std;
 int main() {
 	Student s1("Randy", 1), s2 ("Riker", 2), s3 ("Rolland", 3);
 	
-	//PacificCourse courseA ();
+	PacificCourse courseA ("CS", 250);
 	courseA.enroll(s1);
 	courseA.enroll(s2);
 	courseA.enroll(s3);

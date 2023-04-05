@@ -6,16 +6,18 @@ using namespace std;
 
 //Need to use range-based for loops
 
-ostream& operator<< (ostream& rcOut, const PacificCourse& rcCourse) {
-	/*while (mcStudents != EOF && mcStudents != "/n") {
-		rcOut << mcStudents << endl;
-	}
-	return rcOut;*/ //way I wrote it on test
+PacificCourse::PacificCourse (const string& prefix, unsigned int number) {
+	mcStudents.clear();
+	mNumber = number;
+	mPrefix = prefix;
+}
 
-	/*for (Student myStudent : rcCourse.mcStudents) {
+ostream& operator<< (ostream& rcOut, const PacificCourse& rcCourse) {
+
+	for (Student myStudent : rcCourse.mcStudents) {
 		rcOut << myStudent << endl;
 	}
-	return rcOut;*/ // check if this is right once linked projects
+	return rcOut; 
 }
 
 bool PacificCourse::isIn(const Student& rcStudent) {

@@ -1,6 +1,11 @@
 #include <iostream>
 #include "Student.h"
 
+Student::Student (const string& mcStudName, unsigned int id) {
+	mcName = mcStudName;
+	mID = id;
+}
+
 bool Student::operator== (const Student& rcStudent) const {
 	bool equalStuds = false;
 
